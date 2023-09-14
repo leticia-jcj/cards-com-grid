@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-green: #00a650;
+}
+
+section.cards {
+    background-color: #ededed;
+    border: 2px solid red;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    justify-items: center;
+    row-gap: 20px;
+}
+
+body {
+    background-color: beige;;
+}
+
+.card {
+    width: 200px;
+    padding: 30px 10px;
+    background-color: #fff;
+    line-height: 1.5rem;
+}
+
+.card img {
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+}
+
+.card ion-icon {
+    float: right;
+    font-size: 25px;
+    color: blue;
+    opacity: 0;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.331);
+}
+
+.card:hover ion-icon {
+    opacity: 1;
+}
+
+.card p:nth-of-type(2),
+.card p:nth-of-type(3) {
+    color: var(--color-green);
+}
+
+.card p:nth-of-type(1) {
+    display: none;
+}
+
+.card:hover p:nth-of-type(1) {
+    display: block;
+}
+
+.card p:nth-of-type(4),
+.card p:nth-of-type(2) {
+    line-height: 1rem;
+    
+}
+
+.card h1::after {
+    content: "24%  off";
+    color: var(--color-green);
+    font-size: 0.9rem;
+}
