@@ -70,7 +70,7 @@ body {
 }
 
 .card h1::after {
-    content: "24%  off";
+    content: " 24%  off";
     color: var(--color-green);
     font-size: 0.9rem;
 }
